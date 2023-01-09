@@ -342,6 +342,16 @@ html {
         display: inline-block;
         margin-top: 10px;
     }
+
+    .main-bg .cropped > img {
+        margin-left: -550px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-bg .cropped > img {
+        margin-left: -600px;
+    }
 }
 
 @media (max-height: 770px) {
