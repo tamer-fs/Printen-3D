@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: main;
+    src: url("font/main.ttf");
+}
+
+@font-face {
+    font-family: sec;
+    src: url("font/sec.ttf");
+}
+
+.main-bg > .cropped {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    border-bottom: 5px solid #101820;
+}
+
+.main-bg .cropped > img {
+    height: 100vh;
+    width: auto;
+    margin-left: 30px;
+    transform: scale(1.2);
+}
+
+.main-bg > #top-line {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    padding: 30px;
+    padding-left: 0px;
+    z-index: 1;
+}
+
+.main-bg #top-line > a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #101820;
+    padding: 5px;
+    font-family: sec;
+    border-bottom: 3px solid  #101820;
+    font-weight: 800;
+    transition: .5s ease;
+}
+
+.main-bg #top-line > a:hover {
+    border-bottom: 3px solid #a3a3a3;
+    transition: .5s ease;
+}
+
+.main-bg > .info-txt {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    width: 50vw;
+    display: inline-block;
+}
+
+.main-bg .info-txt > span {
+    font-family: main;
+    font-size: 2rem;
+}
+
+.main-bg .info-txt > p {
+    font-family: sec;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.main-bg .info-txt > a {
+    background-color: #101820a7;
+    color: white;
+    font-family: main;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-bg #top-line > .cart {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+}
+
+.main-bg #top-line .cart > a {
+    color: #101820;
+    font-family: sec;
+    font-weight: 800;
+    text-decoration: none;
+    border-bottom: 2px solid #101820;
+}
+
+.main-bg #top-line .cart > img {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    right: 70px;
+    top: -4px;
+}
+
+.main-bg #top-line > button {
+    position: absolute;
+    font-family: sec;
+    font-weight: 800;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    top: 22px;
+    right: 220px;
+    transition: .3s ease;
+}
+
+.main-bg #top-line > button:hover {
+    cursor: pointer;
+    opacity: .4;
+    transition: .3s ease;
+}
+
+.main-bg > .cropped{
+    margin-bottom: 100px;
+}
+
+#hire-printer {
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#hire-printer > a {
+    color: white;
+    text-decoration: none;
+    background-color: #101820;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: sec;
+    font-weight: 800;
+    transition: .5s ease;
+}
+
+#hire-printer > a:hover {
+    opacity: .4;
+    transition: .5s ease;
+}
+
+#hire-printer .widget > img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#hire-printer > .widget{
+    border-bottom: 4px solid #101820;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#hire-printer .widget > span {
+    font-family: main;
+    font-size: 1.4rem;
+}
+
+#hire-printer .widget > p {
+    font-family: sec;
+    font-size: 0.876rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#hire-printer .widget > li {
+    color: #aeaeae;
+    font-family: sec;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+#attribution {
+    background-color: #101820;
+    text-align: center;
+}
+
+#attribution > .text-widget {
+    display: inline-block;
+    margin: 50px;
+}
+
+#attribution .text-widget > a{
+    color: rgb(206, 206, 206);
+}
+
+#attribution .text-widget > p{
+    color: rgb(206, 206, 206);
+}
+
+#attribution .text-widget > span {
+    color: rgb(206, 206, 206);
+    font-family: main;
+    font-size: 1.3rem;
+}
+
+#about-us {
+    text-align: center;
+    position: relative;
+}
+
+#about-us .txt-container > span {
+    font-family: main;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#about-us .txt-container > p {
+    font-family: sec;
+    font-weight: 600;
+}
+
+#about-us .txt-container p > a {
+    color:  #6192c2;
+    font-family: sec;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#about-us > .txt-container {
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#about-us > #price-info {
+    opacity: 0;
+    position: fixed;
+    width: 25vw;
+    top: 50%;
+    left: 50%;
+    margin-top: -30vw; 
+    margin-left: -12.5vw;
+    background-color: white;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+#about-us #price-info > span {
+    font-family: main;
+    font-size: 1rem;
+    border-bottom: 1px solid #101820;
+    padding-bottom: 2px;
+    color: #101820;
+}
+
+#about-us #price-info > p {
+    font-family: sec;
+    font-weight: 800;
+    font-size: 0.867rem;
+}
+
+#about-us #price-info div > li {
+    font-family: sec;
+    color: #a0a0a0;
+    font-size: 0.867rem;
+}
+
+.main-bg #top-line .dropdown > img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+
+.main-bg #top-line .dropdown > .dropdown-content {
+    background-color: #101820;
+    height: 200vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: -200vw;
+    z-index: 1;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.main-bg #top-line .dropdown .dropdown-content > a {
+    margin-top: 10px;
+    display: block;
+    padding: 6px 12px;
+    color: white;
+    font-family: sec;
+    text-decoration: none;
+}
+
+.main-bg #top-line .dropdown .dropdown-content > img {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 5px;
+    width: 25px;
+    margin-top: 100px;
+}
+
+@media (max-width: 666px) {
+    .main-bg #top-line > a {
+        display: none;
+    }
+
+    .main-bg #top-line {
+        padding-bottom: 50px;
+    }
+
+    .main-bg #top-line .dropdown > img {
+        display: initial;
+    }
+}
+
+@media (max-width: 1218px) {
+    .main-bg .cropped > img {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 942px) {
+    .main-bg .cropped > img {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 780px) {
+    .main-bg .cropped > img {
+        margin-left: -400px;
+    }
+}
+
+@media (max-width: 552px) {
+    .main-bg .info-txt > a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 770px) {
+    .main-bg .cropped {
+        height: 150vh;
+    }
+
+    .main-bg .cropped > img{
+        height: 150vh;
+        margin-left: -800px;
+    }
+}

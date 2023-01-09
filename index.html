@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoge kwaliteit 3d prints | Flexlo-3d</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script/index.js"></script>
+</head>
+    <body>
+        <div class="main-bg">
+            <div class="cropped">
+                <img src="img/main-bg.jpg" alt="main-bg">
+            </div>
+            <div id="top-line">
+                <a href="#">Help</a>
+                <a href="#">Locatie</a>
+                <a href="#">Over ons</a>
+
+                <div class="dropdown">
+                    <img src="img/menu.png" alt="menu-icon" onclick="toggleDropdown()">
+                    <div class="dropdown-content" id="dropdown">
+                        <a href="#">Help</a>
+                        <a href="#">Locatie</a>  
+                        <a href="#">Over ons</a> 
+                        <img src="img/close.png" alt="close-button" onclick="toggleDropdown()"> 
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/shopping-cart.png" alt="cart">
+                    <a href="#">items: 0</a>
+                </div>
+                <button>
+                    Bestel meteen
+                </button>
+            </div>
+            <div class="info-txt">
+                <span>Goedkoop prototypen zonder een  <span style="color: white;">3Dprinter?</span> - dat kan!</span> <br>  <br>
+                <p>
+                    Wij begrijpen dat veel mensen die revolutionaire dingen kunnen maken maar wel moeten ze kunnen prototypen
+                    maar dat ze daar niet de spullen voor hebben als een 3d printer. Daarom kunt u bij ons uw prototypen
+                    doorsturen en printen wij voor u het model. 
+                </p>
+                <a href="#" style="margin-right: 10px;">De print mogelijkheden</a>
+                <a href="#">Advies</a>
+            </div>
+        </div>
+
+        <div id="hire-printer">
+
+            <div class="widget">
+                <img src="img/ender.jpg" alt="ender-3-pro"> <br>
+                <span>FDM - printer</span> <br> <br>
+                <p>
+                    Een goedkope maar hoge kwaliteit optie. 
+                </p>
+                <li>Groot printplaat</li>
+                <li>geschatte print-tijd: 1 werkdag</li>
+            </div>
+            <div class="widget">
+                <img src="img/halot.jpg" alt="halot-one"> <br>
+                <span>SLA - printer</span> <br> <br>
+                <p>
+                    Een hele gedetaillieerde medium kwaliteit optie. 
+                </p>
+                <li>Veel details</li>
+                <li>geschatte print-tijd: 2 werkdagen</li>
+            </div> <br> <br> <br> <br>
+
+            <a href="#">Hulp nodig bij het kiezen?</a>
+        </div>
+
+        <div id="about-us">
+            <div class="txt-container">
+                <span>Over ons</span> <br> <br>
+                <p>
+                    Bij Flexlo-3D zorgen wij dat iedereen de kans krijgt om goede prototypes
+                    te maken. Hierdoor zal een grotere groep mensen nieuwe innovaties kunnen
+                    bedenken die we later misschien nodig hebben. Allemaal door een beetje 
+                    hulp van ons. <br> <br>
+                    
+                    Daarom verkopen wij onze prints voor een fantastische prijs 
+                    <a onclick='showPrice()'>lees hier over de prijzen</a>. U kunt bestellen maar u kunt
+                    ook afhalen bij 2614LA molensingel 17 Delft, als u zo goedkoop 
+                    mogelijk uw project wil krijgen dan kunt u afhalen want dan 
+                    krijgt u 20% korting op uw hele bestelling. 
+                </p>
+            </div>
+            <div id="price-info" onclick="unShowPrice()">
+                <span>Hoe worden onze prints geprijsd?</span> <br> <br>
+                <p>
+                    Onze producten worden geprijsd op de volgende factoren:
+                </p> <br>
+                <div style="text-align: left;">
+                    <li>Duur / grootte print 60%</li>
+                    <li>Materiaal 30%</li>
+                    <li>Print type 5%</li>
+                    <li>Arbeiders kosten 5%</li> <br> <br>
+                </div>
+                <img src="img/close.png" alt="close-img" style="height: 30px; width: auto; cursor: pointer;">
+            </div>
+        </div>
+
+        <div id="attribution">
+            <div class="text-widget">
+                <span>Flexlo-3D</span> <br> <br>
+                <p>molensingel 17, 2614LA, Delft</p> 
+                <a href="https://www.google.nl/maps/dir/51.9944896,4.346473/Molensingel+17,+2614+LA+Delft/@51.9968548,4.3389917,15.24z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x47c5b5b3f3546471:0xe30db65f1e5f0d0e!2m2!1d4.3389523!2d51.9996648!3e1">bekijk op google maps</a>
+            </div>
+            <div class="text-widget">
+                <span>Contact</span> <br> <br>
+                <a href="tel:067392273">067392273</a>  <br>
+                <a href="mailto:Flexlo-3D.info@gmail.com"></a> 
+                <a href="#">instagram</a>
+            </div>
+        </div>
+    </body>
+</html>
