@@ -44,6 +44,7 @@ function showPrice() {
     priceBlock.style.opacity = "1";
     priceBlock.style.marginTop = "-10vw"
     priceBlock.style.transition = ".5s ease";
+    priceBlock.style.display = "";
 }
 
 function unShowPrice() {
@@ -52,6 +53,7 @@ function unShowPrice() {
     priceBlock.style.opacity = "0";
     priceBlock.style.marginTop = "-30vw"
     priceBlock.style.transition = ".5s ease";
+    priceBlock.style.display = "none";
 }
 
 function toggleDropdown() {

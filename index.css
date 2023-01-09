@@ -29,7 +29,7 @@ html {
     height: 100vh;
     width: auto;
     margin-left: 30px;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 .main-bg > #top-line {
@@ -237,12 +237,12 @@ html {
 #about-us > #price-info {
     opacity: 0;
     position: fixed;
-    width: 90vw;
+    width: 60vw;
     height: 50vh;
     top: 50%;
     left: 50%;
-    margin-top: -30vw; 
-    margin-left: -45vw;
+    margin-top: -25vh; 
+    margin-left: -35vw;
     background-color: white;
     padding: 20px 10px 20px 10px;
     border-radius: 10px;
@@ -306,6 +306,19 @@ html {
     margin-top: 100px;
 }
 
+.main-bg .cropped > .img-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a0a0a050;
+}
+
+.main-bg .cropped {
+    overflow: hidden;
+}
+
 @media (max-width: 666px) {
     .main-bg #top-line > a {
         display: none;
@@ -363,5 +376,14 @@ html {
     .main-bg .cropped > img{
         height: 150vh;
         margin-left: -800px;
+    }
+
+    .main-bg .cropped > .img-overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 150vh;
+        background-color: #a0a0a050;
     }
 }
