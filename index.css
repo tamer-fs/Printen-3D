@@ -237,11 +237,11 @@ html {
 #about-us > #price-info {
     opacity: 0;
     position: fixed;
-    width: 25vw;
+    width: 80vw;
     top: 50%;
     left: 50%;
     margin-top: -30vw; 
-    margin-left: -12.5vw;
+    margin-left: -40vw;
     background-color: white;
     padding: 20px 10px 20px 10px;
     border-radius: 10px;
